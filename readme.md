@@ -35,3 +35,12 @@ Vous allez construire une application simple, en HTML + CSS + JavaScript, qui pe
 Pour ceux qui ont besoin d'un peu d'aide ça se passe par ici : 
 
 [Step By Step](https://docs.google.com/document/d/1WkMSqY7wg7mIK8OOLS4D57AzeOa1vajE5I4Fi-7atD0/edit?usp=sharing)
+
+## 💎 Bonus (optionnel pour les plus rapides)
+
+- Ajouter un champ "date" (avec un datepicker et stocké aussi dans le tableau)
+- Ajouter des couleurs selon la catégorie (ou des emoji ou … )
+- Empêcher l’ajout de montants négatifs ou de texte dans le champ montant
+- Classer les dépenses dans un conteneur différent pour chaque catégorie
+- Faire des sous-totaux pour chaque catégorie :-D 
+- Et tout ce que vous voulez pour vous approprier cet exercice récap ^^
