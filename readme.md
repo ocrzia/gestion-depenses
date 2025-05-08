@@ -29,3 +29,9 @@ Vous allez construire une application simple, en HTML + CSS + JavaScript, qui pe
 ## 🖼️ Aperçu visuel (optionnel)
 
 [Live Demo](https://ocrzia.github.io/gestion-depenses/)
+
+### Tips & Tricks
+
+Pour ceux qui ont besoin d'un peu d'aide ça se passe par ici : 
+
+[Step By Step](https://docs.google.com/document/d/1WkMSqY7wg7mIK8OOLS4D57AzeOa1vajE5I4Fi-7atD0/edit?usp=sharing)
