@@ -26,7 +26,7 @@ Vous allez construire une application simple, en HTML + CSS + JavaScript, qui pe
 - JavaScript
 
 
-## 🖼️ Aperçu visuel (optionnel)
+## 🖼️ Aperçu visuel
 
 [Live Demo](https://ocrzia.github.io/gestion-depenses/)
 
