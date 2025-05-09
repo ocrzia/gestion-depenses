@@ -47,9 +47,7 @@ function displayDepenses() {
       `;
       depenseList.appendChild(div);
     });
-
   }
-  
 }
 
 // Fonction pour supprimer une dépense
