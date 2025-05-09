@@ -1,12 +1,12 @@
 // ==============================
 // 🌱 Sélection des éléments
 // ==============================
-const addBt = document.querySelector('.add-button');
-const descriptionInput = document.querySelector('.description');
-const amountInput = document.querySelector('.amount');
-const categoryInput = document.querySelector('.category');
-const depenseList = document.querySelector('.depense-list');
-const tot = document.querySelector('.total span');
+const addBt =               document.querySelector('.add-button');
+const descriptionInput =    document.querySelector('.description');
+const amountInput =         document.querySelector('.amount');
+const categoryInput =       document.querySelector('.category');
+const depenseList =         document.querySelector('.depense-list');
+const tot =                 document.querySelector('.total span');
 // ==============================
 // 🧠 Variables globales
 // ==============================
@@ -24,13 +24,22 @@ function resetForm() {
   descriptionInput.focus();
 }
 
+// Fonction pour ajouter un Emoji en fonction de la catégorie
+function getEmoji(category) {
+  if (category === 'alimentation') return '🍔 ';
+  if (category === 'transport') return '🚗 ';
+  if (category === 'loisirs') return '🎉 ';
+  if (category === 'logement') return '🏠 ';
+  return '🧾 '; // emoji par défaut
+}
+
 // Fonction pour ajouter une dépense
 function addDepense(description, amount, category) {
   depenses.push([description, amount, category]);
   total += parseFloat(amount);
   tot.textContent = `${total}`;
   resetForm();
-};
+}
 
 // Fonction pour afficher les dépenses
 function displayDepenses() {
@@ -42,7 +51,7 @@ function displayDepenses() {
       const div = document.createElement('div');
       div.className = 'depense-item';
       div.innerHTML = `
-      ${depense[0]} - ${depense[1]}€ - ${depense[2]}
+      ${getEmoji(depense[2])} ${depense[0]} | ${depense[1]}€
       <button class="delete-button" data-index="${index}" title="Supprimer ${depense[0]}">❌</button>
       `;
       depenseList.appendChild(div);
@@ -52,11 +61,10 @@ function displayDepenses() {
 
 // Fonction pour supprimer une dépense
 function deleteDepense(index) {
-  const montant = parseFloat(depenses[index][1]); // Récupérer le montant avant suppression
-  depenses.splice(index, 1); // Supprimer l'élément
-  total -= montant; // Soustraire le montant du total
+  const montant = parseFloat(depenses[index][1]); 
+  depenses.splice(index, 1); 
+  total -= montant; 
   tot.textContent = `${total}`;
-  depenseList.innerHTML = ''; // Vider la liste avant de la réafficher
   displayDepenses();
 }
 
@@ -71,7 +79,7 @@ addBt.addEventListener('click', (e) => {
 
   if (description && !isNaN(amount) && category) {
     addDepense(description, amount, category);
-    displayDepenses()
+    displayDepenses();
   }
 });
 
