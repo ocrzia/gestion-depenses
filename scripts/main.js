@@ -28,7 +28,7 @@ function resetForm() {
 function getEmoji(category) {
   if (category === 'alimentation') return '🍔 ';
   if (category === 'transport') return '🚗 ';
-  if (category === 'loisirs') return '🎉 ';
+  if (category === 'divertissement') return '🎉 ';
   if (category === 'logement') return '🏠 ';
   return '🧾 '; // emoji par défaut
 }
