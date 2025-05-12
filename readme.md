@@ -10,4 +10,4 @@ Premiers exercices de Javascript
 
 ## 🖼️ Aperçu visuel (optionnel)
 
-[Live Demo](https://ocrzia.github.io/JS7-Delegation-evt/)
+[Live Demo](https://ocrzia.github.io/gestion-depenses/)
